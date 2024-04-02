@@ -11,6 +11,12 @@ export class AuthController {
         return this.authService.getAuth();
     }
 
+    @Get('hello')
+    getHello(): Promise<any> {
+        return this.authService.getHello();
+    }
+
+
     @Get(':id')
     getAuthById(@Param('id') id: string): string {
         return this.authService.getAuthById(id);
