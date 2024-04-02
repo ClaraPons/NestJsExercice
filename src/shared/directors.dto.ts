@@ -2,7 +2,7 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class DirectorDto {
     @ApiProperty({description:'This is the id',})
-    director_id: number;
+    director_id?: number;
     @ApiProperty({description: 'This is the first name',})
     first_name: string;
     @ApiProperty({description: 'This is the last name',})

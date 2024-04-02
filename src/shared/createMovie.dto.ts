@@ -2,7 +2,7 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class CreateMovieDto {
     @ApiProperty({description:'This is the id',})
-    movie_id: number;
+    movie_id?: number;
     @ApiProperty({description: 'This is the movie name',})
     movie_name: string;
     @ApiProperty({description: 'This is the movie length',})
